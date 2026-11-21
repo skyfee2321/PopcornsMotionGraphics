@@ -1,28 +1,28 @@
 # ❓ What if
 
-Scénarios hypothétiques (« Et si la Lune disparaissait ? ») : cartes, chiffres, schémas, zooms, compteurs.
+Hypothetical scenarios ("What if the Moon disappeared?"): maps, numbers, diagrams, zooms, counters.
 
-## Outils
-- **Remotion** ou **HyperFrames** (graphiques, textes, compteurs)
+## Tools
+- **Remotion** or **HyperFrames** (experimental) for charts, text, counters
 - **FFmpeg**
-- **Blender** optionnel (planètes, plans 3D)
-- Voir `guides/INSTALLATION.md` sections 1 à 5
+- **Blender** optional (planets, 3D shots)
+- See `guides/INSTALLATION.md` sections 1 to 5
 
-## Direction artistique
-- Fond sombre, couleurs vives pour les données
-- Gros chiffres animés, flèches, cartes simplifiées
-- Structure type : accroche (5 s) → situation normale → hypothèse → conséquences en escalade → conclusion
+## Art direction
+- Dark background, bright colors for data
+- Big animated numbers, arrows, simplified maps
+- Typical structure: hook (5 s) → normal situation → hypothesis → escalating consequences → conclusion
 
 ## Workflow
-1. Script : chaque conséquence = 1 scène, avec la donnée chiffrée et sa source
-2. Voix off posée, ton curieux
-3. Test : la scène d'accroche
-4. Rendu basse résolution
-5. SFX : whoosh, ambiance, montée de tension
-6. Rendu final
+1. Script: each consequence = 1 scene, with its figure and source
+2. Calm voice-over, curious tone
+3. Test: the hook scene
+4. Low-resolution render
+5. SFX: whooshes, ambience, rising tension
+6. Final render
 
-## Règle
-Les faits doivent être vérifiables : l'IA indique ses sources dans `1_story_script/sources.md` et signale clairement ce qui relève de la spéculation.
+## Rule
+Facts must be verifiable: the AI lists its sources in `1_story_script/sources.md` and clearly flags what is speculation.
 
-## Si l'IA ne peut pas exécuter
-Code complet des scènes + commande de rendu ; pour Blender, procédure clic par clic (menu, réglage, valeur).
+## If the AI can't run commands
+Full scene code + render command; for Blender, a click-by-click procedure (menu, setting, value).

@@ -1,25 +1,25 @@
 # 🏘️ In this town
 
-Petite ville 3D façon Roblox où des personnages vivent une histoire (« Dans cette ville, … »).
+A small Roblox-style 3D town where characters live a story ("In this town, …").
 
-## Outils
-- **Roblox Studio** (décor + personnages + caméra)
-- **Blender** (alternative ou retouches)
-- **Sketchfab** : assets **gratuits uniquement** (CC0 / CC-BY)
+## Tools
+- **Roblox Studio** (set, characters, camera)
+- **Blender** (alternative or touch-ups)
+- **Sketchfab**: **free assets only** (CC0 / CC-BY)
 - **OBS Studio** (capture), **FFmpeg**
-- Voir `guides/INSTALLATION.md` sections 2, 5, 6, 7
+- See `guides/INSTALLATION.md` sections 2, 5, 6, 7
 
-⚠️ Roblox Studio est un logiciel graphique : l'IA guide l'utilisateur pas à pas (format 🛠️), elle peut écrire les scripts Lua à coller.
+⚠️ Roblox Studio is graphical software: the AI guides the user step by step (🛠️ format) and can write Lua scripts to paste.
 
 ## Workflow
-1. Script : liste des lieux (maison, école, magasin…) et des personnages
-2. Voix off narrateur
-3. Test : construire **un seul lieu** et filmer un plan
-   - Studio → Toolbox → onglet **Marketplace** → filtre gratuit
-   - Caméra : script Lua fourni par l'IA (ServerScriptService / StarterPlayerScripts selon le cas)
-4. Capture de tous les plans avec OBS (1280×720 pour le low render)
-5. SFX : ambiance de ville, pas, portes
-6. Rendu final 1080p
+1. Script: list of places (house, school, shop…) and characters
+2. Narrator voice-over
+3. Test: build **one single place** and film one shot
+   - Studio → Toolbox → **Marketplace** tab → free filter
+   - Camera: Lua script provided by the AI (ServerScriptService or StarterPlayerScripts depending on the case)
+4. Capture every shot with OBS (1280×720 for the low render)
+5. SFX: city ambience, footsteps, doors
+6. Final 1080p render
 
-## Crédits
-Tout asset Sketchfab/Toolbox utilisé est noté dans `assets/CREDITS.md` (nom, auteur, lien, licence).
+## Credits
+Every Sketchfab/Toolbox asset used is recorded in `assets/CREDITS.md` (name, author, link, license).

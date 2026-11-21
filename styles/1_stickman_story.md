@@ -1,31 +1,31 @@
 # 🧍 Stickman story
 
-Histoire racontée par des bonhommes bâtons animés, fond simple, texte et voix off.
+A story told by animated stick figures, with a simple background, on-screen text and voice-over.
 
-## Outils
-- **Remotion** (recommandé) ou **HyperFrames**
+## Tools
+- **Remotion** (recommended) or **HyperFrames** (experimental)
 - **FFmpeg**
-- Voir `guides/INSTALLATION.md` sections 1, 2, 3/4
+- See `guides/INSTALLATION.md` sections 1, 2, 3/4
 
-## Direction artistique
-- Fond blanc ou couleur unie, traits noirs épais (4–6 px)
-- 1 couleur d'accent par personnage
-- Format : 1920×1080 (YouTube) ou 1080×1920 (Shorts/TikTok), 30 fps
-- Rythme : 1 idée par plan, plans de 2 à 4 secondes
+## Art direction
+- White or solid-color background, thick black lines (4–6 px)
+- 1 accent color per character
+- Format: 1920×1080 (YouTube) or 1080×1920 (Shorts/TikTok), 30 fps
+- Pacing: 1 idea per shot, shots of 2 to 4 seconds
 
 ## Workflow
-1. `1_story_script/script.md` : scènes avec durée, action du stickman, texte à l'écran, voix off
-2. `2_voice/` : voix off scène par scène (`scene01.wav`, `scene02.wav`…)
-3. `3_test/` : une seule scène animée pour valider le style du stickman
-4. `4_low_render/` : rendu complet 480p
+1. `1_story_script/script.md`: scenes with duration, stickman action, on-screen text, voice-over
+2. `2_voice/`: voice-over scene by scene (`scene01.wav`, `scene02.wav`…)
+3. `3_test/`: one single animated scene to validate the stickman style
+4. `4_low_render/`: full 480p render
    `npx remotion render --scale=0.5`
-5. `5_low_sfx/` : ajout SFX (pop, whoosh, impact) + musique
-6. `6_output/` : rendu final 1080p
+5. `5_low_sfx/`: add SFX (pop, whoosh, impact) + music
+6. `6_output/`: final 1080p render
 
-## Si l'IA ne peut pas exécuter
-Elle fournit le code complet des composants (ex : `Stickman.tsx`) dans un bloc à copier, avec le chemin exact (`src/Stickman.tsx`), puis la commande à lancer.
+## If the AI can't run commands
+It provides the full component code (e.g. `Stickman.tsx`) in a copy-ready block, with the exact path (`src/Stickman.tsx`), then the command to run.
 
-## Assemblage voix + vidéo (FFmpeg)
+## Merging voice + video (FFmpeg)
 ```bash
-ffmpeg -i video.mp4 -i voix.wav -c:v copy -c:a aac -shortest sortie.mp4
+ffmpeg -i video.mp4 -i voice.wav -c:v copy -c:a aac -shortest output.mp4
 ```

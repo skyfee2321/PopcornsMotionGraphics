@@ -1,0 +1,25 @@
+# Heavy media (keep folder READMEs)
+*.mp4
+*.mov
+*.mkv
+*.webm
+*.wav
+*.mp3
+*.png
+*.jpg
+*.blend
+*.blend1
+*.glb
+*.gltf
+*.fbx
+*.rbxl
+
+# Node / Remotion
+node_modules/
+out/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

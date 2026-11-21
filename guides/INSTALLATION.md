@@ -1,112 +1,113 @@
-# 🧰 Guide d'installation des outils (100 % gratuits)
+# 🧰 Tool installation guide (100% free)
 
-> Pour l'IA : en mode MANUEL, recopie à l'utilisateur uniquement la section de son système, au format 🛠️.
-> Pour l'utilisateur : copie-colle chaque commande dans un terminal (Windows : touche Windows → tape « PowerShell » → Entrée ; macOS : Cmd+Espace → « Terminal » ; Linux : Ctrl+Alt+T).
+> For the AI: in MANUAL mode, give the user only the section for their OS, using the 🛠️ format.
+> For the user: copy-paste each command into a terminal (Windows: Windows key → type "PowerShell" → Enter; macOS: Cmd+Space → "Terminal"; Linux: Ctrl+Alt+T).
 
 ---
 
-## 1. Node.js (requis pour Remotion et HyperFrames)
-| Système | Commande |
+## 1. Node.js (required for Remotion and HyperFrames)
+| OS | Command |
 |---|---|
 | Windows | `winget install OpenJS.NodeJS.LTS` |
-| macOS | `brew install node` (si Homebrew absent : installer depuis https://brew.sh) |
+| macOS | `brew install node` (no Homebrew? install it from https://brew.sh) |
 | Linux (Debian/Ubuntu) | `sudo apt update && sudo apt install -y nodejs npm` |
 
-Sans terminal : télécharger la version **LTS** sur https://nodejs.org et lancer l'installeur (tout laisser par défaut).
+No terminal: download the **LTS** version from https://nodejs.org and run the installer (keep all defaults).
 
-✅ Vérifier : `node -v` → affiche un numéro (v18 ou plus recommandé). **Fermer et rouvrir le terminal après installation.**
+✅ Check: `node -v` → shows a version number (v18 or newer recommended). **Close and reopen the terminal after installing.**
+⚠️ Linux: if `apt` installs a version older than v18, use the LTS installer from https://nodejs.org instead.
 
 ---
 
-## 2. FFmpeg (montage, conversion, ajout du son)
-| Système | Commande |
+## 2. FFmpeg (editing, conversion, adding sound)
+| OS | Command |
 |---|---|
 | Windows | `winget install Gyan.FFmpeg` |
 | macOS | `brew install ffmpeg` |
 | Linux | `sudo apt install -y ffmpeg` |
 
-✅ Vérifier : `ffmpeg -version`
-❌ « commande introuvable » sous Windows : fermer/rouvrir le terminal, ou redémarrer le PC.
+✅ Check: `ffmpeg -version`
+❌ "command not found" on Windows: close/reopen the terminal, or restart the PC.
 
 ---
 
-## 3. Remotion (vidéos codées en React)
+## 3. Remotion (videos coded in React)
 ```bash
 npx create-video@latest
 ```
-Choisir un modèle (ex : *Hello World*), donner un nom au projet, puis :
+Pick a template (e.g. *Hello World*), name the project, then:
 ```bash
-cd nom-du-projet
+cd project-name
 npm install
 npm run dev
 ```
-Un aperçu s'ouvre dans le navigateur (Remotion Studio).
+A preview opens in the browser (Remotion Studio).
 
-Rendu :
+Render:
 ```bash
 npx remotion render
 ```
-✅ Vérifier : la page d'aperçu s'affiche.
-ℹ️ Licence : gratuit pour les particuliers et petites structures (voir https://remotion.dev/license).
+✅ Check: the preview page shows up.
+ℹ️ License: free for individuals and small teams (see https://remotion.dev/license).
 
 ---
 
-## 4. HyperFrames (vidéos en HTML)
-Alternative à Remotion basée sur HTML/CSS. Les commandes évoluent vite : **toujours suivre la doc officielle** (rechercher « HyperFrames » sur GitHub / npm) pour la commande d'initialisation et de rendu à jour.
-✅ Vérifier : un rendu de l'exemple fourni génère un fichier vidéo.
+## 4. HyperFrames (HTML-based videos) — experimental
+An HTML/CSS-based alternative to Remotion. Its commands change quickly: **always follow the official docs** (search "HyperFrames" on GitHub / npm) for the current init and render commands. If anything is unclear, use Remotion instead.
+✅ Check: rendering the provided example produces a video file.
 
 ---
 
 ## 5. Blender (3D)
-| Système | Commande |
+| OS | Command |
 |---|---|
 | Windows | `winget install BlenderFoundation.Blender` |
 | macOS | `brew install --cask blender` |
 | Linux | `sudo snap install blender --classic` |
 
-Sans terminal : https://www.blender.org/download/
+No terminal: https://www.blender.org/download/
 
-✅ Vérifier : `blender --version` (ou ouvrir Blender depuis le menu).
-Réglages conseillés pour les rendus test : Moteur **Eevee**, résolution 50 %, 24 fps.
-
----
-
-## 6. Roblox Studio (style « In this town »)
-⚠️ Windows et macOS uniquement, installation graphique (aucune IA ne peut le faire à ta place).
-1. Aller sur https://create.roblox.com
-2. Se connecter (compte Roblox gratuit)
-3. Cliquer **Start Creating** / **Télécharger Studio** et lancer l'installeur
-4. Ouvrir Studio → **Nouveau** → modèle **Baseplate** ou **City**
-
-Capture vidéo : outil d'enregistrement intégré de Roblox, ou **OBS Studio** (gratuit, https://obsproject.com).
+✅ Check: `blender --version` (or open Blender from the menu).
+Recommended settings for test renders: **Eevee** engine, 50% resolution, 24 fps.
 
 ---
 
-## 7. Sketchfab (modèles 3D gratuits)
-1. Créer un compte gratuit sur https://sketchfab.com
-2. Rechercher un modèle, puis cocher le filtre **Downloadable**
-3. Vérifier la licence : **CC0** ou **CC Attribution** uniquement
-4. **Download 3D Model** → format **glTF / .glb** (le plus simple pour Blender)
-5. Mettre le fichier dans `assets/models/` et noter le crédit dans `assets/CREDITS.md`
-6. Blender : **Fichier → Importer → glTF 2.0**
+## 6. Roblox Studio ("In this town" style)
+⚠️ Windows and macOS only, graphical install (no AI can do it for you).
+1. Go to https://create.roblox.com
+2. Log in (free Roblox account)
+3. Click **Start Creating** / **Download Studio** and run the installer
+4. Open Studio → **New** → **Baseplate** template (or any city-like template)
+
+Video capture: **OBS Studio** (free, https://obsproject.com).
 
 ---
 
-## 8. Voix off gratuite (optionnel)
-- Enregistrer sa propre voix : **Audacity** (https://www.audacityteam.org), export en `.wav`
-- Synthèse vocale locale gratuite : **Piper TTS** (voir sa page GitHub pour l'installation)
-
-## 9. SFX et musique gratuits
-- https://pixabay.com/sound-effects/ et https://pixabay.com/music/
-- https://freesound.org (vérifier la licence CC0 / CC-BY)
+## 7. Sketchfab (free 3D models)
+1. Create a free account at https://sketchfab.com
+2. Search for a model, then tick the **Downloadable** filter
+3. Check the license: **CC0** or **CC Attribution** only
+4. **Download 3D Model** → **glTF / .glb** format (easiest for Blender)
+5. Put the file in `assets/models/` and record the credit in `assets/CREDITS.md`
+6. Blender: **File → Import → glTF 2.0**
 
 ---
 
-## 🆘 Problèmes fréquents
-| Erreur | Solution |
+## 8. Free voice-over (optional)
+- Record your own voice: **Audacity** (https://www.audacityteam.org), export as `.wav`
+- Free local text-to-speech: **Piper TTS** (see its GitHub page for installation)
+
+## 9. Free SFX and music
+- https://pixabay.com/sound-effects/ and https://pixabay.com/music/
+- https://freesound.org (check the license: CC0 / CC-BY)
+
+---
+
+## 🆘 Common problems
+| Error | Fix |
 |---|---|
-| `command not found` / « n'est pas reconnu » | Fermer et rouvrir le terminal, sinon redémarrer |
-| `winget` introuvable | Installer « App Installer » depuis le Microsoft Store |
-| `brew` introuvable | Installer Homebrew : https://brew.sh |
-| `permission denied` (Linux/macOS) | Ajouter `sudo` devant la commande |
-| `npm ERR!` | Vérifier `node -v` (v18+), puis supprimer `node_modules` et relancer `npm install` |
+| `command not found` / "is not recognized" | Close and reopen the terminal, otherwise restart |
+| `winget` not found | Install "App Installer" from the Microsoft Store |
+| `brew` not found | Install Homebrew: https://brew.sh |
+| `permission denied` (Linux/macOS) | Add `sudo` in front of the command |
+| `npm ERR!` | Check `node -v` (v18+), then delete `node_modules` and run `npm install` again |

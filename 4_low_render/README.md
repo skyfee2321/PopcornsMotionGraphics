@@ -1,3 +1,3 @@
-# 4_low_render
+# 4_low_render/
 
-Dépose ici : les rendus basse définition servant de mockups de validation.
+Full low-resolution render (480p) to check pacing and timing.

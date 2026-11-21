@@ -1,24 +1,24 @@
 # 🧊 3D explanation
 
-Explication d'un concept (moteur, cellule, trou noir…) avec modèles 3D, éclatés, annotations.
+Explaining a concept (engine, cell, black hole…) with 3D models, exploded views and annotations.
 
-## Outils
-- **Blender** (modélisation, animation, rendu)
-- **Sketchfab** (modèles gratuits CC0 / CC-BY)
+## Tools
+- **Blender** (modeling, animation, rendering)
+- **Sketchfab** (free CC0 / CC-BY models)
 - **FFmpeg**
-- Voir `guides/INSTALLATION.md` sections 2, 5, 7
+- See `guides/INSTALLATION.md` sections 2, 5, 7
 
 ## Workflow
-1. Script : chaque scène = 1 notion + le mouvement de caméra associé
-2. Voix off pédagogique
-3. Test : un plan (modèle + rotation lente + 1 annotation)
-4. Rendu basse résolution : Eevee, 50 %, 24 fps, export en séquence PNG ou MP4
-5. SFX légers + musique calme
-6. Rendu final : Eevee haute qualité ou Cycles, 1080p
+1. Script: each scene = 1 notion + its camera move
+2. Educational voice-over
+3. Test: one shot (model + slow rotation + 1 annotation)
+4. Low-res render: Eevee, 50%, 24 fps, export as PNG sequence or MP4
+5. Light SFX + calm music
+6. Final render: high-quality Eevee or Cycles, 1080p
 
-## Automatisation
-Si l'IA a un terminal, elle peut générer un script Python Blender et lancer :
+## Automation
+If the AI has a terminal, it can generate a Blender Python script and run:
 ```bash
 blender -b scene.blend -P script.py -a
 ```
-Sinon, procédure clic par clic : Rendu → Propriétés de sortie → Format **FFmpeg Video** → Rendu → **Rendre l'animation** (Ctrl+F12).
+Otherwise, click by click: **Output Properties** → File Format **FFmpeg Video** → menu **Render → Render Animation** (Ctrl+F12).

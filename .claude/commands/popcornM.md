@@ -1,1 +1,5 @@
-Lance le skill Popcorn's MotionGraphics : lis `SKILL.md` à la racine du dépôt et démarre l'ÉTAPE 1 (choix du style + système d'exploitation). Une question à la fois. N'installe rien sans validation. N'écris aucun script avant que l'utilisateur ait choisi une des 5 idées.
+---
+description: Start Popcorn's MotionGraphics (interactive motion graphics video creation)
+---
+
+Start the Popcorn's MotionGraphics skill: read `SKILL.md` at the repository root (or use the `popcornM` skill if the file isn't there) and begin STEP 1 (style choice + operating system). One question at a time. Install nothing without approval. Write no script before the user has picked one of the 5 ideas. Reply in the user's language.

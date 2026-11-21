@@ -1,3 +1,3 @@
-# 2_voice
+# 2_voice/
 
-Dépose ici : le script de la voix off et les fichiers audio générés.
+Voice-over files, one per scene: `scene01.wav`, `scene02.wav`…

@@ -1,3 +1,8 @@
-# templates
+# templates/
 
-Modèles de prompts prêts à l'emploi pour chaque étape du pipeline (script, voix, rendu, SFX).
+Reusable prompts and script templates. Example:
+
+```
+/popcornM
+```
+Then follow the questions: style → tools → 5 ideas → script → pipeline.

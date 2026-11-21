@@ -1,3 +1,3 @@
-# 5_low_sfx
+# 5_low_sfx/
 
-Dépose ici : les rendus basse définition enrichis des effets sonores (SFX) et de la musique.
+Low-resolution render with sound effects and music added.

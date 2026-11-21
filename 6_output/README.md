@@ -1,3 +1,3 @@
-# 6_output
+# 6_output/
 
-Dépose ici : le livrable final (vidéo haute qualité exportée).
+Final render (1080p or 4K), ready to publish.

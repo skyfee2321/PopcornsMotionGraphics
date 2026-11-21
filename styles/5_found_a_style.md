@@ -1,14 +1,14 @@
 # 🎨 Found a style
 
-L'utilisateur fournit une référence (lien, vidéo, capture, description).
+The user provides a reference (link, video, screenshot, description).
 
-## Analyse demandée à l'IA
-1. Type d'animation : 2D vectoriel, 3D, stop motion, texte animé, mixte
-2. Palette, typographie, rythme de montage, place de la voix off
-3. Style le plus proche parmi les styles 1 à 4
-4. Outils gratuits recommandés (dans `guides/INSTALLATION.md`)
+## Analysis the AI must do
+1. Animation type: 2D vector, 3D, stop motion, kinetic text, mixed
+2. Palette, typography, editing pace, role of the voice-over
+3. Closest style among styles 1 to 4
+4. Recommended free tools (from `guides/INSTALLATION.md`)
 
-Si l'IA ne peut pas ouvrir le lien : elle demande à l'utilisateur 3 captures d'écran ou une description (couleurs, mouvements, durée des plans).
+If the AI can't open the link: it asks the user for 3 screenshots or a description (colors, movements, shot length).
 
-## Ensuite
-Résumé de l'analyse en 5 lignes → validation → ÉTAPE 2 (dépendances) du `SKILL.md`.
+## Next
+5-line summary of the analysis → approval → STEP 2 (dependencies) of `SKILL.md`.

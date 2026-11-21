@@ -1,3 +1,3 @@
-# 3_test
+# 3_test/
 
-Dépose ici : les validations intermédiaires (aperçus texte, rythme, tests de ton).
+One single test scene to validate the style before rendering everything.
